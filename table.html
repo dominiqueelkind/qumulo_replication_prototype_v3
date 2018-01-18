@@ -1,0 +1,200 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>replication icons</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+<div id="title">Replication</div>
+<div id="subtitle">Relationships</div>
+<div id="primary_btn"><div class="btn_bg">Create Relationship</div></div>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="15" id="replication" class="replication">
+  <tbody>
+    <tr class="table_header">
+      <th scope="col" onclick="sortTable(0)">Status</th>
+      <th scope="col" onclick="sortTable(1)">Source</th>
+	  <th scope="col" onclick="sortTable(2)">Target</th>
+      <th scope="col" onclick="sortTable(3)">Role</th>
+      <th scope="col" onclick="sortTable(4)">Last Attempt</th>
+      <th scope="col" onclick="sortTable(5)">Recovery Point</th>
+	  <th scope="col"><!-- edit or delete --></th>
+    </tr>
+    <tr>
+      <td class="table_row" valign="top">
+		<!--START replication awaiting authorization svg-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 20" class="svg_auth">
+  <path fill="white" fill-rule="evenodd" d="M9.9,5.12028481 L9.9,3.00605969 C9.9,2.29616725 7.68412842,1 4.94955361,1 C2.21497881,1 0,2.29616725 0,3.00605969 L0,5.12028481 C0,7.04635661 3.42647669,8.63702469 3.42647669,10.0004545 C3.42647669,11.3638843 0,12.9545523 0,14.8806241 L0,16.9948493 C0,17.7047417 2.21497881,19 4.94955361,19 C7.68412842,19 9.9,17.7047417 9.9,16.9948493 L9.9,14.8806241 C9.9,12.9545523 6.47263053,11.3638843 6.47263053,10.0004545 C6.47263053,8.63702469 9.9,7.04635661 9.9,5.12028481 L9.9,5.12028481 Z M1.36148435,3.09695501 C1.97571467,2.70156037 3.12918207,2.12346614 4.99776355,2.12346614 C6.86634503,2.12346614 8.53851565,3.09695501 8.53851565,3.09695501 C8.66439715,3.17421603 9.15542429,3.44235722 8.81884751,3.64505378 C8.07784291,4.09225875 6.62797367,4.56218755 4.94866084,4.56218755 C3.269348,4.56218755 1.86858148,4.04408423 1.12757688,3.59687926 C0.791892867,3.3941827 1.36148435,3.09695501 1.36148435,3.09695501 L1.36148435,3.09695501 Z M5.39326359,10.0013634 C5.39326359,11.0748371 6.27264857,11.7656416 7.20560014,12.689138 C7.88678871,13.3626723 8.81974028,14.2861688 8.81974028,14.8815331 L8.81974028,16.0768065 C7.9635675,15.641418 5.39772748,15.2169368 5.39772748,13.8235116 C5.39772748,13.1181639 4.50227252,13.1181639 4.50227252,13.8235116 C4.50227252,15.2169368 1.9364325,15.641418 1.07936694,16.0768065 L1.07936694,14.8815331 C1.07936694,14.2861688 2.01231851,13.3635813 2.69439986,12.689138 C3.62645865,11.7656416 4.50673641,11.0748371 4.50673641,10.0013634 C4.50673641,8.92698076 3.62645865,8.23617634 2.69439986,7.31358885 C2.01231851,6.63914558 1.07936694,5.7165581 1.07936694,5.12119376 L1.03740644,4.22223905 C1.94536027,4.71943645 3.38273063,5.19300106 4.94955361,5.19300106 C6.51726937,5.19300106 7.96088917,4.71943645 8.868843,4.22223905 L8.81974028,5.12119376 C8.81974028,5.7165581 7.88678871,6.63914558 7.20560014,7.31358885 C6.27264857,8.23526738 5.39326359,8.92698076 5.39326359,10.0013634 L5.39326359,10.0013634 Z"/>
+</svg>
+<!--END replication awaiting authorization svg-->
+Awaiting authorization
+		</td>
+      <td class="table_row" valign="top">/directory/</td>
+	  <td class="table_row" valign="top">/directory/</td>	
+      <td class="table_row" valign="top">Source</td>
+      <td class="table_row" valign="top">Unavailable</td>
+      <td class="table_row" valign="top">Unavailable</td>
+      <td class="table_row" valign="top"><a href="details.html">See details</a></td>
+    </tr>
+    <tr>
+      <td class="table_row" valign="top">
+		<!--START replication enabled in progress svg-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="svg_replication">
+	
+        <g id="frames" fill="white">
+            <path d="M8.00067252,1 L1.99999987,1 C1.33737369,1 1,1.20404038 1,1.86666656 L1,8.13467924 C1,8.79730541 1.33737369,9.00134579 1.99999987,9.00134579 L8.00067252,9.00134579 C8.6632987,9.00134579 8.99999899,8.79730541 8.99999899,8.13467924 L8.99999899,1.86666656 C9.00067239,1.20404038 8.6639721,1 8.00067252,1 L8.00067252,1 Z" id="source cluster"></path>
+            <path d="M18.0006725,11 L11.9999999,11 C11.3373737,11 11,11.2040404 11,11.8666666 L11,18.1346792 C11,18.7973054 11.3373737,19.0013458 11.9999999,19.0013458 L18.0006725,19.0013458 C18.6632987,19.0013458 18.999999,18.7973054 18.999999,18.1346792 L18.999999,11.8666666 C19.0006724,11.2040404 18.6639721,11 18.0006725,11 L18.0006725,11 Z" id="target cluster"></path>
+            <path d="M12.7501681,3 L11.25,3 C11.0843434,3 11,3.05101009 11,3.21666664 L11,4.78366981 C11,4.94932635 11.0843434,5.00033645 11.25,5.00033645 L12.7501681,5.00033645 C12.9158247,5.00033645 12.9999997,4.94932635 12.9999997,4.78366981 L12.9999997,3.21666664 C13.0001681,3.05101009 12.915993,3 12.7501681,3 L12.7501681,3 Z" id="top one"><animate attributeName="opacity" values="0.7;0.2;1;0.8" keyTimes="0;0.6;0.8;1" dur="2.5s" begin="0s" repeatCount="indefinite" /></path>
+            <path d="M4.75016813,11 L3.24999997,11 C3.08434342,11 3,11.0510101 3,11.2166666 L3,12.7836698 C3,12.9493264 3.08434342,13.0003364 3.24999997,13.0003364 L4.75016813,13.0003364 C4.91582467,13.0003364 4.99999975,12.9493264 4.99999975,12.7836698 L4.99999975,11.2166666 C5.0001681,11.0510101 4.91599302,11 4.75016813,11 L4.75016813,11 Z" id="bottom one"><animate attributeName="opacity" values="0.7;0.2;1;0.8" keyTimes="0;0.6;0.8;1" dur="2.5s" begin="0s" repeatCount="indefinite" /></path>
+            <path d="M16.7501681,3 L15.25,3 C15.0843434,3 15,3.05101009 15,3.21666664 L15,4.78366981 C15,4.94932635 15.0843434,5.00033645 15.25,5.00033645 L16.7501681,5.00033645 C16.9158247,5.00033645 16.9999997,4.94932635 16.9999997,4.78366981 L16.9999997,3.21666664 C17.0001681,3.05101009 16.915993,3 16.7501681,3 L16.7501681,3 Z" id="top two"><animate attributeName="opacity" values="0.8;0.2;0.2;1" keyTimes="0;0.6;0.8;1" dur="2.5s" begin="0s" repeatCount="indefinite" />
+			</path>
+            <path d="M4.75016813,15 L3.24999997,15 C3.08434342,15 3,15.0510101 3,15.2166666 L3,16.7836698 C3,16.9493264 3.08434342,17.0003364 3.24999997,17.0003364 L4.75016813,17.0003364 C4.91582467,17.0003364 4.99999975,16.9493264 4.99999975,16.7836698 L4.99999975,15.2166666 C5.0001681,15.0510101 4.91599302,15 4.75016813,15 L4.75016813,15 Z" id="bottom two"><animate attributeName="opacity" values="0.8;0.2;0.2;1" keyTimes="0;0.6;0.8;1" dur="2.5s" begin="0s" repeatCount="indefinite" /></path>
+            <path d="M16.7501681,7 L15.25,7 C15.0843434,7 15,7.05101009 15,7.21666664 L15,8.78366981 C15,8.94932635 15.0843434,9.00033645 15.25,9.00033645 L16.7501681,9.00033645 C16.9158247,9.00033645 16.9999997,8.94932635 16.9999997,8.78366981 L16.9999997,7.21666664 C17.0001681,7.05101009 16.915993,7 16.7501681,7 L16.7501681,7 Z" id="top three"><animate attributeName="opacity" values="1;0.5;0.2;0.2" keyTimes="0;0.6;0.8;1" dur="2.5s" begin="0s" repeatCount="indefinite" />
+			</path>
+            <path d="M8.75016813,15 L7.24999997,15 C7.08434342,15 7,15.0510101 7,15.2166666 L7,16.7836698 C7,16.9493264 7.08434342,17.0003364 7.24999997,17.0003364 L8.75016813,17.0003364 C8.91582467,17.0003364 8.99999975,16.9493264 8.99999975,16.7836698 L8.99999975,15.2166666 C9.0001681,15.0510101 8.91599302,15 8.75016813,15 L8.75016813,15 Z" id="bottom three"><animate attributeName="opacity" values="1;0.5;0.2;0.2" keyTimes="0;0.6;0.8;1" dur="2.5s" begin="0s" repeatCount="indefinite" /></path>
+        </g>
+	
+</svg>
+<!--END replication enabled in progress svg-->	
+In progress
+		  
+		  <div class="progress combined_status_progress">
+  <b class="progress__bar">
+    <span class="progress__text">
+      <em>0%</em>
+    </span>
+  </b>
+</div>
+		  
+		</td>
+      <td class="table_row" valign="top">/directory/</td>
+		<td class="table_row" valign="top">/directory/</td>
+      <td class="table_row" valign="top">Source</td>
+      <td class="table_row" valign="top">Completed</td>
+      <td class="table_row" valign="top">Tues Jan 16 13:00:00 2018</td>
+      <td class="table_row" valign="top"><a href="details.html">See details</a></td>
+    </tr>
+    <tr>
+      <td class="table_row">
+		<!--START replication enabled in sync svg-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="svg_replication">
+  <g fill="white">
+    <path d="M8.00067252 1L1.99999987 1C1.33737369 1 1 1.20404038 1 1.86666656L1 8.13467924C1 8.79730541 1.33737369 9.00134579 1.99999987 9.00134579L8.00067252 9.00134579C8.6632987 9.00134579 8.99999899 8.79730541 8.99999899 8.13467924L8.99999899 1.86666656C9.00067239 1.20404038 8.6639721 1 8.00067252 1L8.00067252 1zM18.0006725 11L11.9999999 11C11.3373737 11 11 11.2040404 11 11.8666666L11 18.1346792C11 18.7973054 11.3373737 19.0013458 11.9999999 19.0013458L18.0006725 19.0013458C18.6632987 19.0013458 18.999999 18.7973054 18.999999 18.1346792L18.999999 11.8666666C19.0006724 11.2040404 18.6639721 11 18.0006725 11L18.0006725 11zM12.7501681 3L11.25 3C11.0843434 3 11 3.05101009 11 3.21666664L11 4.78366981C11 4.94932635 11.0843434 5.00033645 11.25 5.00033645L12.7501681 5.00033645C12.9158247 5.00033645 12.9999997 4.94932635 12.9999997 4.78366981L12.9999997 3.21666664C13.0001681 3.05101009 12.915993 3 12.7501681 3L12.7501681 3zM4.75016813 11L3.24999997 11C3.08434342 11 3 11.0510101 3 11.2166666L3 12.7836698C3 12.9493264 3.08434342 13.0003364 3.24999997 13.0003364L4.75016813 13.0003364C4.91582467 13.0003364 4.99999975 12.9493264 4.99999975 12.7836698L4.99999975 11.2166666C5.0001681 11.0510101 4.91599302 11 4.75016813 11L4.75016813 11zM16.7501681 3L15.25 3C15.0843434 3 15 3.05101009 15 3.21666664L15 4.78366981C15 4.94932635 15.0843434 5.00033645 15.25 5.00033645L16.7501681 5.00033645C16.9158247 5.00033645 16.9999997 4.94932635 16.9999997 4.78366981L16.9999997 3.21666664C17.0001681 3.05101009 16.915993 3 16.7501681 3L16.7501681 3zM4.75016813 15L3.24999997 15C3.08434342 15 3 15.0510101 3 15.2166666L3 16.7836698C3 16.9493264 3.08434342 17.0003364 3.24999997 17.0003364L4.75016813 17.0003364C4.91582467 17.0003364 4.99999975 16.9493264 4.99999975 16.7836698L4.99999975 15.2166666C5.0001681 15.0510101 4.91599302 15 4.75016813 15L4.75016813 15zM16.7501681 7L15.25 7C15.0843434 7 15 7.05101009 15 7.21666664L15 8.78366981C15 8.94932635 15.0843434 9.00033645 15.25 9.00033645L16.7501681 9.00033645C16.9158247 9.00033645 16.9999997 8.94932635 16.9999997 8.78366981L16.9999997 7.21666664C17.0001681 7.05101009 16.915993 7 16.7501681 7L16.7501681 7zM8.75016813 15L7.24999997 15C7.08434342 15 7 15.0510101 7 15.2166666L7 16.7836698C7 16.9493264 7.08434342 17.0003364 7.24999997 17.0003364L8.75016813 17.0003364C8.91582467 17.0003364 8.99999975 16.9493264 8.99999975 16.7836698L8.99999975 15.2166666C9.0001681 15.0510101 8.91599302 15 8.75016813 15L8.75016813 15z"/>
+  </g>
+</svg>
+<!--END replication enabled in sync svg-->	
+Complete
+		  <div class="progress_complete combined_status_progress ">
+  <div class="complete"><span class="complete__text">
+      100%
+    </span></div>
+</div>
+		  
+		</td>
+      <td class="table_row">/directory/</td>
+	  <td class="table_row">/directory/</td>
+      <td class="table_row">Source</td>
+      <td class="table_row">Completed</td>
+      <td class="table_row">Tues Jan 16 13:00:57 2018</td>
+      <td class="table_row"><a href="details.html">See details</a></td>
+    <tr>
+      <td class="table_row"><!--START replication disabled svg-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="svg_replication">
+  <g fill="white" fill-rule="evenodd">
+    <path d="M8.99999899 4.961527L7.50561523 3.45031738 3.50891113 7.51428223 4.98590118 9.00134579 1.99999987 9.00134579C1.33737369 9.00134579 1 8.79730541 1 8.13467924L1 1.86666656C1 1.20404038 1.33737369 1 1.99999987 1L8.00067252 1C8.6639721 1 9.00067239 1.20404038 8.99999899 1.86666656L8.99999899 4.961527zM11 15.0564626L12.529541 16.5964355 16.5150146 12.5611572 14.9712394 11 18.0006725 11C18.6639721 11 19.0006724 11.2040404 18.999999 11.8666666L18.999999 18.1346792C18.999999 18.7973054 18.6632987 19.0013458 18.0006725 19.0013458L11.9999999 19.0013458C11.3373737 19.0013458 11 18.7973054 11 18.1346792L11 15.0564626zM12.7501681 3L11.25 3C11.0843434 3 11 3.05101009 11 3.21666664L11 4.78366981C11 4.94932635 11.0843434 5.00033645 11.25 5.00033645L12.7501681 5.00033645C12.9158247 5.00033645 12.9999997 4.94932635 12.9999997 4.78366981L12.9999997 3.21666664C13.0001681 3.05101009 12.915993 3 12.7501681 3L12.7501681 3zM4.75016813 11L3.24999997 11C3.08434342 11 3 11.0510101 3 11.2166666L3 12.7836698C3 12.9493264 3.08434342 13.0003364 3.24999997 13.0003364L4.75016813 13.0003364C4.91582467 13.0003364 4.99999975 12.9493264 4.99999975 12.7836698L4.99999975 11.2166666C5.0001681 11.0510101 4.91599302 11 4.75016813 11L4.75016813 11zM16.7501681 3L15.25 3C15.0843434 3 15 3.05101009 15 3.21666664L15 4.78366981C15 4.94932635 15.0843434 5.00033645 15.25 5.00033645L16.7501681 5.00033645C16.9158247 5.00033645 16.9999997 4.94932635 16.9999997 4.78366981L16.9999997 3.21666664C17.0001681 3.05101009 16.915993 3 16.7501681 3L16.7501681 3zM4.75016813 15L3.24999997 15C3.08434342 15 3 15.0510101 3 15.2166666L3 16.7836698C3 16.9493264 3.08434342 17.0003364 3.24999997 17.0003364L4.75016813 17.0003364C4.91582467 17.0003364 4.99999975 16.9493264 4.99999975 16.7836698L4.99999975 15.2166666C5.0001681 15.0510101 4.91599302 15 4.75016813 15L4.75016813 15zM16.7501681 7L15.25 7C15.0843434 7 15 7.05101009 15 7.21666664L15 8.78366981C15 8.94932635 15.0843434 9.00033645 15.25 9.00033645L16.7501681 9.00033645C16.9158247 9.00033645 16.9999997 8.94932635 16.9999997 8.78366981L16.9999997 7.21666664C17.0001681 7.05101009 16.915993 7 16.7501681 7L16.7501681 7zM8.75016813 15L7.24999997 15C7.08434342 15 7 15.0510101 7 15.2166666L7 16.7836698C7 16.9493264 7.08434342 17.0003364 7.24999997 17.0003364L8.75016813 17.0003364C8.91582467 17.0003364 8.99999975 16.9493264 8.99999975 16.7836698L8.99999975 15.2166666C9.0001681 15.0510101 8.91599302 15 8.75016813 15L8.75016813 15z" opacity=".5"/>
+    <polygon points="11.444 10 14 12.556 12.556 14 10 11.444 7.444 14 6 12.556 8.556 10 6 7.444 7.444 6 10 8.556 12.556 6.001 14 7.444" opacity=".5"/>
+  </g>
+</svg>
+<!--END replication disabled svg-->		
+<span class="disabled">Disabled</span></td>
+      <td class="table_row"><span class="disabled">/directory/</span></td>
+		<td class="table_row"><span class="disabled">/directory/</span></td>
+		<td class="table_row"><span class="disabled">Source</span></td>
+		<td class="table_row"><span class="disabled">Completed</span></td>
+		<td class="table_row"><span class="disabled">Mon Jan 15 15:00:00 2018</span></td>
+      <td class="table_row"><a href="details.html">See details</a></td>
+    </tr>
+    <tr>
+      <td class="table_row"><!--START replication enabled in blackout svg-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="svg_replication">
+  <path fill="white" fill-rule="evenodd" d="M9.93716995,9.93716995 C7.51535726,12.3589826 3.84772066,12.7693717 1,11.1752344 C1.32762151,11.7606423 1.73887272,12.3124259 2.23720228,12.8098933 C5.15734454,15.7300356 9.89061321,15.7300356 12.8098933,12.8098933 C15.7300356,9.89061321 15.7300356,5.15734454 12.8098933,2.23720228 C12.3115637,1.73887272 11.7597801,1.32762151 11.1743722,1 C12.7702339,3.84772066 12.3589826,7.51621942 9.93716995,9.93716995 L9.93716995,9.93716995 Z" opacity=".5"/>
+</svg>
+<!--END replication enabled in blackout svg-->	
+	<span class="disabled">In blackout window</span><br/>
+		  <span class="disabled" style="padding-left: 35px">active Wed Jan 17 18:00:00 2018</span></td>
+      <td class="table_row"><span class="disabled">/directory/</span></td>
+		<td class="table_row"><span class="disabled">/directory/</span></td>
+		<td class="table_row"><span class="disabled">Source</span></td>
+		<td class="table_row"><span class="disabled">Completed</span></td>
+		<td class="table_row"><span class="disabled">Mon Jan 15 12:00:00 2018</span></td>
+		<td class="table_row"><a href="details.html">See details</a></td>
+    </tr>
+  </tbody>
+</table>
+
+
+<script>
+function sortTable(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("replication");
+  switching = true;
+  // Set the sorting direction to ascending:
+  dir = "asc"; 
+  /* Make a loop that will continue until
+  no switching has been done: */
+  while (switching) {
+    // Start by saying: no switching is done:
+    switching = false;
+    rows = table.getElementsByTagName("TR");
+    /* Loop through all table rows (except the
+    first, which contains table headers): */
+    for (i = 1; i < (rows.length - 1); i++) {
+      // Start by saying there should be no switching:
+      shouldSwitch = false;
+      /* Get the two elements you want to compare,
+      one from current row and one from the next: */
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /* Check if the two rows should switch place,
+      based on the direction, asc or desc: */
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          // If so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          // If so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /* If a switch has been marked, make the switch
+      and mark that a switch has been done: */
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      // Each time a switch is done, increase this count by 1:
+      switchcount ++; 
+    } else {
+      /* If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again. */
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+</script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="js/progress.js"></script>
+	
+</body>
+</html>
