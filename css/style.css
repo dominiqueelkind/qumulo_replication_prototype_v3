@@ -133,6 +133,7 @@ a:active {
 }
 
 /* progress styles */
+.progress_container { width: 4.25em; }
 .combined_status_progress {
 	margin-top: .5em;
 	margin-left: 2em;
