@@ -131,6 +131,10 @@ a:active {
 .hide {
 	display: none;
 }
+.sm_txt {
+	opacity: .5;
+	font-size: .75em;
+}
 
 /* progress styles */
 .progress_container { width: 4.25em; }
