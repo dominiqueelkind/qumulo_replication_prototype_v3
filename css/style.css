@@ -10,15 +10,16 @@ body {
 	color: #fff;
 }
 
-h3 { font-size: 1.15em; line-height:inherit; margin-bottom: -20px; margin-top: 0; }
+h3 { font-size: 1.15em; line-height:inherit; margin-bottom: -.5em; margin-top: 0; }
 h4 { font-size: 1.15em; line-height:inherit; margin-bottom: 10px; margin-top: 0; }
-.time { font-size: 1.85em; letter-spacing: 1px; }
+.time { font-size: 2em; }
 .statcolumn {
 	width: auto;
 	float: left;
 	clear: right;
-	margin-right: 25px;
+	margin-right: 3.5em;
 }
+.bold { font-weight: bold; }
 .statdivide { clear: both; margin-bottom: 1em; }
 
 a {
@@ -71,6 +72,23 @@ a:active {
 .btn_bg {
 	background-image: linear-gradient(-180deg, #1199DD 3%, #1177AA 100%);
 	border: 1px solid #1177AA;
+	box-shadow: 0 1px 4px 0 rgba(0,0,0,0.50);
+	border-radius: 3px;
+	padding:10px 20px;
+	font-weight: bold;
+}
+
+#abort_btn {
+	font-size: 1em;
+	padding: 0 1em 0 0;
+	width: auto;
+	float: left;
+	clear: none;
+}
+
+.abort_btn_bg {
+	background-image: linear-gradient(-180deg, #cc0000 3%, #aa0000 100%);
+	border: 1px solid #aa0000;
 	box-shadow: 0 1px 4px 0 rgba(0,0,0,0.50);
 	border-radius: 3px;
 	padding:10px 20px;
@@ -295,9 +313,10 @@ a:active {
 /* columns */
 
 .full_column {
-	padding: 1em 0 1em 0;
+	padding: 2em 0 6em 0;
 	width: auto;
 	clear: both;
+	margin-bottom: 2em;
 	border-top: 1px solid #4a4a4a;
 }
 .margin40 {

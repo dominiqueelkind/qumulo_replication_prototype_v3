@@ -60,44 +60,46 @@ In progress
 	
 <div class="full_column">
 	
+	<div class="statcolumn"><h3>Start time</h3><br/>
+	<span class="time">18:00:00</span><br/>
+	<span class="sm_txt_white">2018-01-18</span></div>
 	
-	<p><strong>Started</strong><br/><span class="sm_txt_white">Wed Jan 17 2018</span><br/>
-	<span class="time">18:00:00</span></p>
+	<div class="statcolumn"><h3>Estimated completion</h3><br/>
+	<span class="time">18:05:00</span><br/>
+	<span class="sm_txt_white">2018-01-18</span></div>
 	
-	<p><strong>Estimated completion</strong><br/><span class="sm_txt_white">Wed Jan 17 2018</span><br/>
-	<span class="time">18:05:00</span></p>
+	<div class="statcolumn"><h3>Estimated time remaining</h3><br/>
+	<span class="time">5 minutes</span></div>
 	
-	<p><strong>Estimated time remaining</strong><br/>
-		<span class="time">00:05:00</span></p>
+	<div class="statcolumn">
+	<div id="abort_btn"><div class="abort_btn_bg">Manually Abort</div></div><br/><br/><br/>
+	<span class="sm_txt_white">Progress from recovery point <br/>(2018-01-18 13:00:00) will be lost</span></div>
 	
-	<p><a href="">Manually abort</a><br/>
-		<span class="sm_txt_white">Progress from recovery point (Sat Oct 23 14:16 2017) will be lost</span></p>
+	
 </div>
 	
 <div class="full_column margin40">
-	<h4>Statistics</h4>
 	
-	<p style="margin-bottom: 0"><strong>Data</strong></p>
-	<div class="statcolumn"><span class="sm_txt_white">Transferred</span><br/>
-	<span class="time">50</span><span class="sm_txt_white">PB</span></div>
-	<div class="statcolumn"><span class="sm_txt_white">Skipped</span><br/>
-	<span class="time">5</span><span class="sm_txt_white">PB</span></div>
-	<div class="statcolumn"><span class="sm_txt_white">Remaining</span><br/>
-	<span class="time">10</span><span class="sm_txt_white">PB</span></div>
-	<div class="statcolumn"><span class="sm_txt_white">Total</span><br/>
-	<span class="time">65</span><span class="sm_txt_white">PB</span></div>
 	
-	<div class="statdivide"></div>
+	<div class="statcolumn">
+	<h3>Transferred</h3><br/>
+	<span class="time">200,000</span><span class="sm_txt_white">TB</span><br/>
+	<span class="sm_txt_white">1,570 files</span></div>
 	
-	<p style="margin-bottom: 0"><strong>Files</strong></p>
-	<div class="statcolumn"><span class="sm_txt_white">Transferred</span><br/>
-	<span class="time">170</span></div>
-	<div class="statcolumn"><span class="sm_txt_white">Skipped</span><br/>
-	<span class="time">20</span></div>
-	<div class="statcolumn"><span class="sm_txt_white">Remaining</span><br/>
-	<span class="time">10</span></div>
-	<div class="statcolumn"><span class="sm_txt_white">Total</span><br/>
-	<span class="time">300</span></div>
+	<div class="statcolumn">
+	<h3>Skipped</h3><br/>
+	<span class="time">100,250</span><span class="sm_txt_white">PB</span><br/>
+	<span class="sm_txt_white">860 files</span></div>
+	
+	<div class="statcolumn">
+	<h3>Remaining</h3><br/>
+	<span class="time">99,750</span><span class="sm_txt_white">PB</span><br/>
+	<span class="sm_txt_white">9,960 files</span></div>
+	
+	<div class="statcolumn bold">
+	<h3>Total</h3><br/>
+	<span class="time">400,000</span><span class="sm_txt_white">PB</span><br/>
+	<span class="sm_txt_white">12,390 files</span></div>
 	
 	</div>
 	
@@ -107,7 +109,13 @@ In progress
 	
 </div>
 
-
+<script>
+// When the user clicks on div, open the popup
+function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}
+</script>
 
 <script>
 function sortTable(n) {
