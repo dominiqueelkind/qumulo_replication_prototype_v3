@@ -53,6 +53,7 @@ a:active {
 
 #subtitle {
 	font-size: 1.25em;
+	font-weight: bold;
 	padding: 30px 0 20px 0;
 	width: auto;
 	float: left;
@@ -101,6 +102,10 @@ a:active {
 
 .table_row { 
 	border-bottom: 1px solid #333;
+}
+
+.table_row_progress { 
+	padding-bottom: 1.5em;
 }
 
 .icon {
@@ -288,31 +293,13 @@ a:active {
 }
 
 /* columns */
-.left_column {
-	width: 28%;
-	height: 370px;
-	float: left;
-	clear: both;
-	padding: 30px;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	margin-right: 10px;
-	border: 1px solid #4a4a4a;
-}
 
-.right_column {
-	width: 27%;
-	height: 370px;
-	float: left;
-	clear: none;
-	padding: 30px;
-	margin-top: 20px;
-	border: 1px solid #4a4a4a;
-}
-.margin { margin-right: 10px; }
 .full_column {
-	padding: 0 0 30px 0;
+	padding: 1em 0 1em 0;
 	width: auto;
-	float: left;
 	clear: both;
+	border-top: 1px solid #4a4a4a;
+}
+.margin40 {
+	margin-bottom: 40px;
 }
