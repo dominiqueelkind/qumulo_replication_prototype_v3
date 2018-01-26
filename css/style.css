@@ -157,6 +157,10 @@ a:active {
 .sm_txt_white {
 	font-size: .75em;
 }
+.sm_unicode {
+	font-size: .55em;
+	vertical-align: middle;
+}
 .sm_txt_error {
 	font-size: .75em;
 }
