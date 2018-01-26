@@ -78,21 +78,16 @@ a:active {
 	font-weight: bold;
 }
 
-#abort_btn {
-	font-size: 1em;
-	padding: 0 1em 0 0;
-	width: auto;
-	float: left;
-	clear: none;
-}
-
-.abort_btn_bg {
+.abort_btn {
 	background-image: linear-gradient(-180deg, #cc0000 3%, #aa0000 100%);
 	border: 1px solid #aa0000;
 	box-shadow: 0 1px 4px 0 rgba(0,0,0,0.50);
 	border-radius: 3px;
 	padding:10px 20px;
 	font-weight: bold;
+	font-size: .85em;
+	color: #fff;
+	cursor: pointer;
 }
 
 #main_container { 
@@ -321,4 +316,44 @@ a:active {
 }
 .margin40 {
 	margin-bottom: 40px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 10em; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #333333;
+    margin: auto;
+    padding: 2em;
+    border: 1px solid #656565;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+	border-radius: 3px;
+    width: 30%;
+}
+
+/* The Close Button */
+.close {
+    color: #fff;
+    float: right;
+    font-size: 28px;
+}
+
+.close:hover,
+.close:focus {
+    color: #656565;
+    text-decoration: none;
+    cursor: pointer;
 }
