@@ -43,6 +43,13 @@ a:active {
 	font-size: .85em;
 	margin-top: .75em;
 }
+.retry { 
+	float: left;
+	clear: none;
+	padding-left: 2.2em;
+	font-size: .85em;
+	margin-top: .75em;
+}
 
 #title {
 	font-size: 2em;
@@ -212,6 +219,7 @@ a:active {
   border-color: #2674ee;
   box-shadow: 0 0 0.6em #115cd0 inset, 0 0 0.4em #0f51b9 inset, 0 0 0.5em rgba(13, 71, 161, 0.5), 0 0 0.1em rgba(180, 207, 249, 0.5);
 }
+
 .progress--active .progress__bar {
   opacity: 1;
 }
@@ -337,7 +345,7 @@ a:active {
 .modal-content {
     background-color: #333333;
     margin: auto;
-    padding: 2em;
+    padding: 1em 2em 2em 2em;
     border: 1px solid #656565;
 	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
 	border-radius: 3px;
