@@ -179,6 +179,22 @@ a:active {
 	margin-top: .5em;
 	margin-left: 2em;
 }
+.incomplete {
+  background-color: rgba(208, 2, 27, 0.95);
+  background-image: linear-gradient(90deg, rgba(233, 2, 30, 0) 10%, rgba(253, 8, 38, 0.8) 30%, #fd223c 70%, rgba(253, 8, 38, 0.8) 80%, rgba(233, 2, 30, 0) 90%), linear-gradient(to right, rgba(253, 34, 60, 0) 0%, #fd223c 100%), linear-gradient(to left, rgba(253, 34, 60, 0) 0%, #fd223c 100%);
+  border-color: #fd3b52;
+  box-shadow: 0 0 0.6em #fd0826 inset, 0 0 0.4em #e9021e inset, 0 0 0.5em rgba(208, 2, 27, 0.5), 0 0 0.1em rgba(255, 210, 216, 0.5);
+  color: white;
+  font-size: .75em;
+  font-weight: normal;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
+  line-height: 20px;
+  display: block;
+  position: relative;
+  width: 70%;
+  height: 100%;
+  opacity: 1; 
+}
 .complete {
   background-color: rgba(13, 71, 161, 0.95);
   background-image: linear-gradient(90deg, rgba(15, 81, 185, 0) 10%, rgba(17, 92, 208, 0.8) 30%, #1366e8 70%, rgba(17, 92, 208, 0.8) 80%, rgba(15, 81, 185, 0) 90%), linear-gradient(to right, rgba(19, 102, 232, 0) 0%, #1366e8 100%), linear-gradient(to left, rgba(19, 102, 232, 0) 0%, #1366e8 100%);
@@ -219,7 +235,6 @@ a:active {
   border-color: #2674ee;
   box-shadow: 0 0 0.6em #115cd0 inset, 0 0 0.4em #0f51b9 inset, 0 0 0.5em rgba(13, 71, 161, 0.5), 0 0 0.1em rgba(180, 207, 249, 0.5);
 }
-
 .progress--active .progress__bar {
   opacity: 1;
 }
